@@ -4,15 +4,15 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setuptools.setup(
-    name="package_template",
+    name="bot_tools",
     version="0.0.1",
     author="Qustomxyz",
     author_email="qbus.klb@gmail.com",
-    description="Template package",
+    description="Small scripts collection for telegram bot dev",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Qustomxyz/package_template",
-    packages=setuptools.find_packages(),
+    url="https://github.com/Qustomxyz/bot_tools",
+    packages=['requests', 'python-dotenv'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU License",
