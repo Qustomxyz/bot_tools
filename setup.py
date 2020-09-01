@@ -12,7 +12,11 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Qustomxyz/bot_tools",
-    packages=['requests', 'python-dotenv'],
+    packages=setuptools.find_packages(),
+    install_requires=[
+        'requests',
+        'python-dotenv'
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU License",
